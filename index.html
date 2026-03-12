@@ -1,155 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUX.Q | Natural Cleaning Solutions</title>
+    <title>Lux.q Cleaning Products</title>
     <style>
-        :root {
-            --primary-green: #2e7d32; /* Natural Green */
-            --light-green: #e8f5e9;
-            --white: #ffffff;
-            --text-dark: #333333;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--white);
-            color: var(--text-dark);
-            /* Background mein patton (leaves) ka halka pattern */
-            background-image: url('https://www.transparenttextures.com/patterns/leaves.png');
-            text-align: center;
-        }
-
-        header {
-            background-color: var(--white);
-            padding: 30px 20px;
-            border-bottom: 3px solid var(--primary-green);
-        }
-
-        .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: var(--primary-green);
-            letter-spacing: 5px;
-        }
-
-        .hero {
-            padding: 60px 20px;
-            background: var(--light-green);
-            border-radius: 0 0 50px 50px;
-        }
-
-        .hero h1 {
-            color: var(--primary-green);
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-        }
-
-        .product-section {
-            padding: 50px 20px;
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .product-card {
-            background: var(--white);
-            border: 2px solid var(--light-green);
-            border-radius: 20px;
-            padding: 25px;
-            width: 300px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            transition: 0.3s;
-        }
-
-        .product-card:hover {
-            transform: scale(1.05);
-            border-color: var(--primary-green);
-        }
-
-        .product-title {
-            color: var(--primary-green);
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .size-tag {
-            display: inline-block;
-            background: var(--primary-green);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        .features {
-            margin-top: 40px;
-            background: #f1f8e9;
-            padding: 30px;
-        }
-
-        .footer {
-            padding: 40px;
-            background: var(--primary-green);
-            color: white;
-            margin-top: 50px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            background: var(--primary-green);
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+        body { font-family: 'Arial', sans-serif; background-color: #f4fbf4; color: #2d5a27; margin: 0; padding: 20px; text-align: center; }
+        header { background-color: #2d5a27; color: white; padding: 20px; border-radius: 10px; }
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        .product-section { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
+        .product-card { background: white; border: 2px solid #a8d5a2; border-radius: 15px; padding: 15px; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .product-card img { width: 100%; border-radius: 10px; height: auto; display: block; }
+        h2 { color: #2d5a27; border-bottom: 2px solid #2d5a27; display: inline-block; padding-bottom: 5px; }
+        footer { margin-top: 50px; font-size: 0.8em; color: #777; }
     </style>
 </head>
 <body>
 
     <header>
-        <div class="logo">LUX.Q</div>
-        <p style="margin:5px; color: #666;">Pure • Fresh • Effective</p>
+        <h1>Lux.q Cleaning Product</h1>
+        <p>Natural & Fresh Cleaning Solutions</p>
     </header>
 
-    <section class="hero">
-        <h1>Lux.Q Cleaning Products</h1>
-        <p style="font-size: 1.2rem;">Nature ki shakti, aapke ghar ki safai ke liye.</p>
-    </section>
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-section">
+            <div class="product-card">
+                <img src="1773343673286.png" alt="Lux.q Product 1">
+                <p>Lux.q Premium Cleaner</p>
+            </div>
 
-    <section class="product-section">
-        <div class="product-card">
-            <div class="product-title">Pine Floor Cleaner</div>
-            <p>Bade gharon ke liye perfect bachat pack.</p>
-            <div class="size-tag">5 Litre Pack</div>
-            <br>
-            <a href="#" class="btn">Order Now</a>
+            <div class="product-card">
+                <img src="1773343669916.png" alt="Lux.q Product 2">
+                <p>Lux.q Eco-Friendly Solution</p>
+            </div>
         </div>
 
-        <div class="product-card">
-            <div class="product-title">Pine Floor Cleaner</div>
-            <p>Rozana ki safai aur taazgi ke liye.</p>
-            <div class="size-tag">1 Litre Bottle</div>
-            <br>
-            <a href="#" class="btn">Order Now</a>
+        <div style="margin-top: 40px;">
+            <h3>Coming Soon...</h3>
+            <p>Main abhi Class 9 mein hoon, toh yeh site mere future business ka proof hai!</p>
         </div>
-    </section>
-
-    <section class="features">
-        <h2 style="color: var(--primary-green);">Kyun chune LUX.Q?</h2>
-        <p>✔ Powerful Disinfectant | ✔ Long Lasting Fragrance | ✔ Eco-Friendly</p>
-    </section>
-
-    <div class="footer">
-        &copy; 2026 LUX.Q Industries <br>
-        <small>Specializing in Premium Pine Cleaners & Home Hygiene</small>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Lux.q by Karthik. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
