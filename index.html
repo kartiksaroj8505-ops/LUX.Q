@@ -3,461 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lux.Q Cleaning Products | Premium Hygiene</title>
-    
-    <!-- Google Fonts: Poppins for a modern, premium feel -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <title>LUX.Q | Premium Cleaning & Fragrance</title>
     <style>
-        /* --- CSS VARIABLES & RESET --- */
         :root {
-            --primary-green: #1A4D2E; /* Deep, premium dark green */
-            --accent-green: #2E7D32;
-            --text-dark: #333333;
-            --text-light: #666666;
+            --gold: #D4AF37;
+            --black: #0a0a0a;
             --white: #ffffff;
-            --bg-light: #f9f9f9;
-            --font-main: 'Poppins', sans-serif;
-            
-            /* Product Colors */
-            --rose: #FFC0CB;
-            --lemon: #FFFACD;
-            --lavender: #E6E6FA;
-            --pine: #98FB98;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            --gray: #1a1a1a;
         }
 
         body {
-            font-family: var(--font-main);
-            color: var(--text-dark);
-            background-color: var(--white);
-            line-height: 1.6;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: var(--black);
+            color: var(--white);
+            text-align: center;
         }
 
-        a { text-decoration: none; color: inherit; }
-        ul { list-style: none; }
-
-        /* --- HEADER & NAVIGATION --- */
         header {
-            background-color: var(--white);
-            padding: 1.5rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            padding: 50px 20px;
+            border-bottom: 1px solid var(--gold);
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--primary-green);
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 10px;
+            color: var(--gold);
+            text-transform: uppercase;
         }
 
-        .logo i {
-            font-size: 1.5rem;
+        .tagline {
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            color: #ccc;
         }
 
-        nav ul {
-            display: flex;
-            gap: 2rem;
-        }
-
-        nav a {
-            font-weight: 500;
-            color: var(--text-dark);
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--primary-green);
-        }
-
-        .btn-nav {
-            background-color: var(--primary-green);
-            color: var(--white);
-            padding: 0.6rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-
-        .btn-nav:hover {
-            background-color: var(--accent-green);
-            color: var(--white);
-        }
-
-        /* --- HERO SECTION --- */
-        .hero {
-            height: 90vh;
-            background: linear-gradient(rgba(26, 77, 46, 0.9), rgba(26, 77, 46, 0.7)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        .hero-section {
+            padding: 100px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80'); /* Luxury texture background */
             background-size: cover;
             background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: var(--white);
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            letter-spacing: 1px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin-bottom: 2.5rem;
-            font-weight: 300;
-        }
-
-        .btn-cta {
-            background-color: var(--white);
-            color: var(--primary-green);
-            padding: 1rem 2.5rem;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        .btn-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-            background-color: #f0f0f0;
-        }
-
-        /* --- WHY CHOOSE US (Features) --- */
-        .features {
-            padding: 5rem 10%;
-            background-color: var(--white);
-            text-align: center;
         }
 
         .section-title {
-            color: var(--primary-green);
-            font-size: 2.2rem;
-            margin-bottom: 3rem;
-            position: relative;
-            display: inline-block;
+            color: var(--gold);
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
         }
 
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: var(--primary-green);
-            margin: 10px auto 0;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .feature-card {
-            padding: 2rem;
-            border-radius: 12px;
-            transition: transform 0.3s;
-            border: 1px solid #eee;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--primary-green);
-            margin-bottom: 1.5rem;
-        }
-
-        .feature-card h3 {
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .feature-card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* --- PRODUCT RANGE --- */
-        .products {
-            padding: 5rem 10%;
-            background-color: var(--bg-light);
-            text-align: center;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
+        .product-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 50px;
         }
 
         .product-card {
-            background: var(--white);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-            position: relative;
+            background: var(--gray);
+            border: 1px solid #333;
+            padding: 30px;
+            width: 280px;
+            transition: 0.4s;
         }
 
         .product-card:hover {
-            transform: translateY(-5px);
+            border-color: var(--gold);
+            transform: translateY(-10px);
         }
 
-        .badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background-color: var(--primary-green);
-            color: var(--white);
-            padding: 5px 12px;
-            border-radius: 20px;
+        .product-card h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            text-decoration: none;
+            transition: 0.3s;
+            text-transform: uppercase;
             font-size: 0.8rem;
-            font-weight: 600;
         }
 
-        .product-img {
-            height: 250px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #fff;
-            padding: 20px;
-        }
-        
-        /* Simulating bottle visuals with CSS */
-        .bottle-mockup {
-            width: 80px;
-            height: 180px;
-            border-radius: 40px 40px 10px 10px;
-            position: relative;
-            box-shadow: inset -10px 0 20px rgba(0,0,0,0.1);
-        }
-        .bottle-cap {
-            width: 40px;
-            height: 30px;
-            background: #333;
-            margin: 0 auto;
-            border-radius: 5px 5px 0 0;
+        .btn:hover {
+            background: var(--gold);
+            color: var(--black);
         }
 
-        .rose .bottle-mockup { background: var(--rose); }
-        .lemon .bottle-mockup { background: var(--lemon); }
-        .lavender .bottle-mockup { background: var(--lavender); }
-        .pine .bottle-mockup { background: var(--pine); }
-
-        .product-info {
-            padding: 1.5rem;
-        }
-
-        .product-info h3 {
-            color: var(--primary-green);
-            margin-bottom: 0.5rem;
-        }
-
-        .product-info p {
-            color: var(--text-light);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .price {
-            font-weight: 700;
-            color: var(--text-dark);
-            font-size: 1.1rem;
-        }
-
-        /* --- ABOUT US --- */
-        .about {
-            padding: 5rem 10%;
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-            background-color: var(--white);
-        }
-
-        .about-content {
-            flex: 1;
-        }
-
-        .about-image {
-            flex: 1;
-            height: 400px;
-            background-color: #eee;
-            border-radius: 20px;
-            background-image: url('https://images.unsplash.com/photo-1556910103-1c02745a30bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .about h2 {
-            color: var(--primary-green);
-            font-size: 2.2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .about p {
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        /* --- CONTACT SECTION --- */
-        .contact {
-            padding: 5rem 10%;
-            background-color: var(--primary-green);
-            color: var(--white);
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact p {
-            margin-bottom: 3rem;
-            opacity: 0.9;
-        }
-
-        .contact-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 3rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .contact-form {
-            flex: 1;
-            min-width: 300px;
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 10px;
-            color: var(--text-dark);
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-family: var(--font-main);
-        }
-
-        .btn-submit {
-            width: 100%;
-            padding: 12px;
-            background-color: var(--primary-green);
-            color: var(--white);
-            border: none;
-            border-radius: 5px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .btn-submit:hover {
-            background-color: var(--accent-green);
-        }
-
-        .contact-details {
-            flex: 1;
-            min-width: 300px;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .detail-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 1.5rem;
-            font-size: 1.1rem;
-        }
-
-        .detail-item i {
-            font-size: 1.5rem;
-            background: rgba(255,255,255,0.2);
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-        }
-
-        /* --- FOOTER --- */
         footer {
-            background-color: #111;
-            color: #888;
-            padding: 2rem 5%;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        /* --- RESPONSIVE --- */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            .about { flex-direction: column; }
-            .about-image { width: 100%; }
-            nav { display: none; } /* Simplified for demo */
-            .logo { font-size: 1.5rem; }
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px solid #222;
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <div class="logo">
-            <i class="fa-solid fa-leaf"></i>
-            Lux.Q
+        <div class="logo">LUX.Q</div>
+        <div class="tagline">Defining Excellence in Every Drop</div>
+    </header>
+
+    <section class="hero-section">
+        <h1 style="font-size: 3.5rem;">The Art of Purity</h1>
+        <p>Premium Cleaning Solutions & Upcoming Luxury Fragrances</p>
+        <a href="#collection" class="btn">Explore Collection</a>
+    </section>
+
+    <section id="collection" style="padding: 80px 0;">
+        <h2 class="section-title">Our Signature Series</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <h3>Cleaning Essence</h3>
+                <p>High-performance cleaning with a touch of sophistication.</p>
+                <div class="btn">View Details</div>
+            </div>
+
+            <div class="product-card">
+                <h3>Fragrance Royale</h3>
+                <p>Coming Soon: The ultimate luxury perfume collection.</p>
+                <div class="btn" style="opacity: 0.5;">Coming Soon</div>
+            </div>
+
+            <div class="product-card">
+                <h3>Luxe Polish</h3>
+                <p>Give your space the diamond shine it deserves.</p>
+                <div class="btn">View Details</div>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li>
+    </section>
+
+    <footer>
+        &copy; 2026 LUX.Q Industries. All Rights Reserved. <br>
+        Designed for the Elite.
+    </footer>
+
+</body>
+</html>
