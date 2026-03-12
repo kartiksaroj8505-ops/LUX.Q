@@ -3,149 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUX.Q | Premium Cleaning & Fragrance</title>
+    <title>LUX.Q | Natural Cleaning Solutions</title>
     <style>
         :root {
-            --gold: #D4AF37;
-            --black: #0a0a0a;
+            --primary-green: #2e7d32; /* Natural Green */
+            --light-green: #e8f5e9;
             --white: #ffffff;
-            --gray: #1a1a1a;
+            --text-dark: #333333;
         }
 
         body {
             margin: 0;
-            font-family: 'Playfair Display', serif;
-            background-color: var(--black);
-            color: var(--white);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--white);
+            color: var(--text-dark);
+            /* Background mein patton (leaves) ka halka pattern */
+            background-image: url('https://www.transparenttextures.com/patterns/leaves.png');
             text-align: center;
         }
 
         header {
-            padding: 50px 20px;
-            border-bottom: 1px solid var(--gold);
+            background-color: var(--white);
+            padding: 30px 20px;
+            border-bottom: 3px solid var(--primary-green);
         }
 
         .logo {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
-            letter-spacing: 10px;
-            color: var(--gold);
-            text-transform: uppercase;
+            color: var(--primary-green);
+            letter-spacing: 5px;
         }
 
-        .tagline {
-            font-size: 1.2rem;
-            letter-spacing: 3px;
-            margin-top: 10px;
-            color: #ccc;
+        .hero {
+            padding: 60px 20px;
+            background: var(--light-green);
+            border-radius: 0 0 50px 50px;
         }
 
-        .hero-section {
-            padding: 100px 20px;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80'); /* Luxury texture background */
-            background-size: cover;
-            background-position: center;
+        .hero h1 {
+            color: var(--primary-green);
+            font-size: 2.8rem;
+            margin-bottom: 10px;
         }
 
-        .section-title {
-            color: var(--gold);
-            font-size: 2rem;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-        }
-
-        .product-container {
+        .product-section {
+            padding: 50px 20px;
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 40px;
             flex-wrap: wrap;
-            padding: 50px;
         }
 
         .product-card {
-            background: var(--gray);
-            border: 1px solid #333;
-            padding: 30px;
-            width: 280px;
-            transition: 0.4s;
+            background: var(--white);
+            border: 2px solid var(--light-green);
+            border-radius: 20px;
+            padding: 25px;
+            width: 300px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
         }
 
         .product-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-10px);
+            transform: scale(1.05);
+            border-color: var(--primary-green);
         }
 
-        .product-card h3 {
-            color: var(--gold);
-            margin-bottom: 15px;
+        .product-title {
+            color: var(--primary-green);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .size-tag {
+            display: inline-block;
+            background: var(--primary-green);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .features {
+            margin-top: 40px;
+            background: #f1f8e9;
+            padding: 30px;
+        }
+
+        .footer {
+            padding: 40px;
+            background: var(--primary-green);
+            color: white;
+            margin-top: 50px;
         }
 
         .btn {
             display: inline-block;
             margin-top: 20px;
-            padding: 12px 30px;
-            border: 1px solid var(--gold);
-            color: var(--gold);
+            padding: 10px 25px;
+            background: var(--primary-green);
+            color: white;
             text-decoration: none;
-            transition: 0.3s;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-        }
-
-        .btn:hover {
-            background: var(--gold);
-            color: var(--black);
-        }
-
-        footer {
-            padding: 40px;
-            font-size: 0.8rem;
-            color: #666;
-            border-top: 1px solid #222;
+            border-radius: 5px;
+            font-weight: bold;
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <div class="logo">LUX.Q</div>
-        <div class="tagline">Defining Excellence in Every Drop</div>
+        <p style="margin:5px; color: #666;">Pure • Fresh • Effective</p>
     </header>
 
-    <section class="hero-section">
-        <h1 style="font-size: 3.5rem;">The Art of Purity</h1>
-        <p>Premium Cleaning Solutions & Upcoming Luxury Fragrances</p>
-        <a href="#collection" class="btn">Explore Collection</a>
+    <section class="hero">
+        <h1>Lux.Q Cleaning Products</h1>
+        <p style="font-size: 1.2rem;">Nature ki shakti, aapke ghar ki safai ke liye.</p>
     </section>
 
-    <section id="collection" style="padding: 80px 0;">
-        <h2 class="section-title">Our Signature Series</h2>
-        <div class="product-container">
-            <div class="product-card">
-                <h3>Cleaning Essence</h3>
-                <p>High-performance cleaning with a touch of sophistication.</p>
-                <div class="btn">View Details</div>
-            </div>
+    <section class="product-section">
+        <div class="product-card">
+            <div class="product-title">Pine Floor Cleaner</div>
+            <p>Bade gharon ke liye perfect bachat pack.</p>
+            <div class="size-tag">5 Litre Pack</div>
+            <br>
+            <a href="#" class="btn">Order Now</a>
+        </div>
 
-            <div class="product-card">
-                <h3>Fragrance Royale</h3>
-                <p>Coming Soon: The ultimate luxury perfume collection.</p>
-                <div class="btn" style="opacity: 0.5;">Coming Soon</div>
-            </div>
-
-            <div class="product-card">
-                <h3>Luxe Polish</h3>
-                <p>Give your space the diamond shine it deserves.</p>
-                <div class="btn">View Details</div>
-            </div>
+        <div class="product-card">
+            <div class="product-title">Pine Floor Cleaner</div>
+            <p>Rozana ki safai aur taazgi ke liye.</p>
+            <div class="size-tag">1 Litre Bottle</div>
+            <br>
+            <a href="#" class="btn">Order Now</a>
         </div>
     </section>
 
-    <footer>
-        &copy; 2026 LUX.Q Industries. All Rights Reserved. <br>
-        Designed for the Elite.
-    </footer>
+    <section class="features">
+        <h2 style="color: var(--primary-green);">Kyun chune LUX.Q?</h2>
+        <p>✔ Powerful Disinfectant | ✔ Long Lasting Fragrance | ✔ Eco-Friendly</p>
+    </section>
+
+    <div class="footer">
+        &copy; 2026 LUX.Q Industries <br>
+        <small>Specializing in Premium Pine Cleaners & Home Hygiene</small>
+    </div>
 
 </body>
 </html>
