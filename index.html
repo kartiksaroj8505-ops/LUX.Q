@@ -7,12 +7,14 @@
     <style>
         body { font-family: 'Arial', sans-serif; background-color: #f4fbf4; color: #2d5a27; margin: 0; padding: 20px; text-align: center; }
         header { background-color: #2d5a27; color: white; padding: 20px; border-radius: 10px; }
-        .container { max-width: 800px; margin: auto; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
         .product-section { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
-        .product-card { background: white; border: 2px solid #a8d5a2; border-radius: 15px; padding: 15px; width: 250px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .product-card img { width: 100%; border-radius: 10px; height: auto; display: block; }
+        .product-card { background: white; border: 2px solid #a8d5a2; border-radius: 15px; padding: 15px; width: 220px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+        .product-card:hover { transform: scale(1.05); }
+        .product-card img { width: 100%; border-radius: 10px; height: 200px; object-fit: cover; display: block; margin-bottom: 10px; }
         h2 { color: #2d5a27; border-bottom: 2px solid #2d5a27; display: inline-block; padding-bottom: 5px; }
         footer { margin-top: 50px; font-size: 0.8em; color: #777; }
+        .badge { background: #2d5a27; color: white; padding: 5px 10px; border-radius: 5px; font-size: 0.9em; }
     </style>
 </head>
 <body>
@@ -25,25 +27,46 @@
     <div class="container">
         <h2>Our Products</h2>
         <div class="product-section">
+            
             <div class="product-card">
-                <img src="1773343673286.png" alt="Lux.q Product 1">
-                <p>Lux.Q Premium Cleaner</p>
+                <img src="IMG_20260322_185339.png" alt="Lux.Q Hand Wash">
+                <p class="badge">Hand Wash</p>
             </div>
 
             <div class="product-card">
-                <img src="1773343669916.png" alt="Lux.q Product 2">
-                <p>Lux.Q Eco-Friendly Solution</p>
+                <img src="IMG_20260322_185310.png" alt="Lux.Q Glass Cleaner">
+                <p class="badge">Glass Cleaner</p>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG_20260322_185247.png" alt="Lux.Q Room Freshener">
+                <p class="badge">Room Freshener</p>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG_20260322_185217.png" alt="Lux.Q Perfume">
+                <p class="badge">Perfume</p>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG_20260322_185217.png" alt="Lux.Q Toilet Cleaner">
+                <p class="badge">Toilet Cleaner</p>
+            </div>
+
+            <div class="product-card">
+                <img src="IMG_20260322_185127.png" alt="Lux.Q Bathroom Floor Cleaner">
+                <p class="badge">Bathroom Floor Cleaner</p>
             </div>
         </div>
 
-        <div style="margin-top: 40px;">
+        <div style="margin-top: 40px; background: #e8f5e9; padding: 20px; border-radius: 10px;">
             <h3>Coming Soon...</h3>
             <p>Main abhi Class 9 mein hoon, toh yeh site mere future business ka proof hai!</p>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Lux.Q by Kartik saroj. All Rights Reserved.jai shree shyam.</p>
+        <p>&copy; 2026 Lux.Q by Kartik Saroj. All Rights Reserved. Jai Shree Shyam.</p>
     </footer>
 
 </body>
